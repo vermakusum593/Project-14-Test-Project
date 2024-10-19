@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100vh;
+  background-image: url("../image/image_1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.background .search-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.background .search-container .title {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 5px;
+  margin-right: 80px;
+  font-family: "Lobster", cursive;
+}
+.background .search-container .title2 {
+  font-size: 11px;
+  color: white;
+  margin-bottom: 35px;
+  margin-right: 80px;
+}
+.background .search-container .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.background .search-container .search-form .search-box {
+  width: 400px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  outline: none;
+}
+.background .search-container .search-form .search-button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: #4285f4;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.background .search-container .search-form .search-button:hover {
+  background-color: #357ae8;
+}
+
+.header .container-1 {
+  -ms-flex-line-pack: end;
+      align-content: end;
+}
+
+.rectangle {
+  max-width: 100%;
+  width: 100%;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #5474FD;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ul-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+.ul-bottom li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 3rem;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    width: 250px;
+  }
+  .ul-bottom li a {
+    margin-right: 1rem;
+  }
+}
+.why-choose-us {
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.why-choose-us .background-container {
+  position: relative;
+  padding: 50px;
+  background-image: url("../image/image_2_background_1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  color: white;
+}
+.why-choose-us .background-container .text2 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: left;
+  margin-top: 150px;
+}
+.why-choose-us .background-container .text2 h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+}
+.why-choose-us .background-container .text2 p {
+  font-size: 16px;
+  color: white;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.why-choose-us .background-container .text2 .explore-button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.why-choose-us .background-container .text2 .explore-button:hover {
+  background-color: #357ae8;
+}
+.why-choose-us .background-container .images-container {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 90px;
+  gap: 20px;
+}
+.why-choose-us .background-container .images-container img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.why-choose-us .background-container .images-container1 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 290px;
+  gap: 20px;
+}
+.why-choose-us .background-container .images-container1 img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .why-choose-us .background-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .why-choose-us .background-container .images-container,
+  .why-choose-us .background-container .images-container1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px;
+  }
+}
+.background1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 70vh;
+  background-image: url("../image/image_4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.square-main {
+  width: 340px;
+  height: auto;
+  background-color: #232323;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-right: 18%;
+  margin-top: 10%;
+  text-align: start;
+  padding: 20px;
+  opacity: 0.8;
+}
+.square-main .book-btn {
+  width: 40%;
+  height: 25px;
+  background-color: #496BFE;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Aleo", sans-serif;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+.square-main .book-btn:hover {
+  background-color: #357ae8;
+}
+
+.spain {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.spain-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.spain-info {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.background2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 75vh;
+  background-image: url("../image/image_5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.background-container1 {
+  position: relative;
+  padding: 50px;
+  background-image: url("../image/image_6.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.background-container1 .tourist-say-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 1px;
+  text-align: center;
+  z-index: 10;
+}
+.background-container1 .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  z-index: 5;
+  margin-top: 60px;
+}
+.background-container1 .text-container {
+  max-width: 500px;
+  margin-left: 20px;
+  z-index: 25;
+}
+.background-container1 .right-image {
+  width: 25%;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.background-container1 .quote {
+  color: rgb(86, 59, 209);
+  font-size: 44px;
+}
+
+.square2 {
+  width: 340px;
+  height: auto;
+  background-color: #232323;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-left: 38%;
+  margin-top: 10%;
+  text-align: start;
+  padding: 20px;
+  opacity: 0.8;
+}
+.square2 .book-btn2 {
+  width: 40%;
+  height: 25px;
+  background-color: #496BFE;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Aleo", sans-serif;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+.square2 .book-btn2:hover {
+  background-color: #357ae8;
+}
+
+.spain2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.spain-name2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.spain-info2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-rectangle {
+  background-color: #232323;
+  text-align: center;
+  min-height: 5vh;
+  color: #FFFFFF;
+  line-height: 1.2;
+  font-family: "Josefin sans";
+}
+
+.footer-name {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.footer-text {
+  font-size: 12px;
+  padding-bottom: 2px;
+}
